@@ -1,6 +1,6 @@
 {
   "name": "multi-acl-groups-mongoose",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mongodb backend for multi-acl-groups",
   "main": "index.js",
   "directories": {
