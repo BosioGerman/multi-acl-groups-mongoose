@@ -4,10 +4,7 @@ mongoose.Promise = global.Promise
 mongoose.set('debug', true)
 mongoose.connect('mongodb://localhost:32768/tera_auth_dev')
 async function main () {
-  let acl = Acl({
-    uri: 'mongodb://localhost:32768/tera_auth_dev',
-    prefix: 'acl_'
-  })
+  let acl = Acl()
   /*
   await acl.addUserAcl('root', {
     id: 'usr-root-acl',
