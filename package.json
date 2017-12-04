@@ -1,0 +1,43 @@
+{
+  "name": "multi-acl-groups-mongoose",
+  "version": "0.1.0",
+  "description": "Mongodb backend for multi-acl-groups",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "standard",
+    "report": "nyc report --reporter=html",
+    "test": "nyc ava --verbose && npm run report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BosioGerman/multi-acl-groups-mongoose.git"
+  },
+  "keywords": [
+    "Acl",
+    "Groups",
+    "Mongodb"
+  ],
+  "author": "German Bosio <bosiogerman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BosioGerman/multi-acl-groups-mongoose/issues"
+  },
+  "homepage": "https://github.com/BosioGerman/multi-acl-groups-mongoose#readme",
+  "ava": {
+    "files": [
+      "test/**-test.js"
+    ]
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "mongoose": "^4.13.5",
+    "multi-acl-groups": "0.0.1"
+  }
+}
